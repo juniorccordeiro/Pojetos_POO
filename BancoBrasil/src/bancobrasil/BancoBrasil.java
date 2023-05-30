@@ -111,11 +111,11 @@ public class BancoBrasil {
                         user = new Cliente();
 
                         System.out.print("Nome: ");
-                        user.setnome(scan.next());
+                        user.setNome(scan.next());
                         System.out.print("Sobrenome: ");
-                        user.setsobrenome(scan.next());
+                        user.setSobremnome(scan.next());
                         System.out.print("Telefone: ");
-                        user.settelefone(scan.next());
+                        user.setTelefone(scan.next());
 
                         users.add(user);
                     }
@@ -132,7 +132,7 @@ public class BancoBrasil {
 
                     if (users.size() != 0) {
                         for (int i = 0; i < qtdCadastro; i++) {
-                            System.out.printf("%d- %s %s\n", i + 1, users.get(i).getnome(), users.get(i).getsobrenome());
+                            System.out.printf("%d- %s %s\n", i + 1, users.get(i).getNome(), users.get(i).getSobremnome());
                         }
                         System.out.println("Selecione o Cliente: ");
                         int userOpcao = scan.nextInt();
